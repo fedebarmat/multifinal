@@ -1,0 +1,1197 @@
+@font-face {
+	font-family: "GT-America-Expanded-Black";
+	src: url(../fuente/GT-America-Expanded-Black.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Expanded-Medium";
+	src: url(../fuente/GT-America-Expanded-Medium.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Expanded-Regular";
+	src: url(../fuente/GT-America-Expanded-Regular.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Compressed-Black";
+	src: url(../fuente/GT-America-Compressed-Black.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Compressed-Medium";
+	src: url(../fuente/GT-America-Compressed-Medium.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Compressed-Regular";
+	src: url(../fuente/GT-America-Compressed-Regular.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Light";
+	src: url(../fuente/GT-America-Light.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Regular";
+	src: url(../fuente/GT-America-Regular.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Bold";
+	src: url(../fuente/GT-America-Bold.otf);
+}
+
+@font-face {
+	font-family: "GT-America-Black";
+	src: url(../fuente/GT-America-Black.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "GT-America-Compressed-Black";
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+/*---------------------PROBANDO MENU-----------------------------*/
+
+.inputNavbar {
+  display: none;
+}
+
+.labelHambur {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 5px;
+  height: 30px;
+  line-height:20px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.labelHambur {
+  display: none;
+}
+
+input:checked  ~ .labelHambur{
+  margin-top: 15px;
+}
+
+.menuPruebaElemento {
+  display: block;
+  margin: 0;
+  list-style: under;
+}
+
+.menuPrueba{
+  display: none;
+}
+
+input:checked  ~ .menuPrueba{
+  display:block;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*---------------------INDEX PAGE-----------------------------*/
+.indexMain, .indexSecundarias, .indexSecundariasMicrositio, .indexSecundariasMicrositio2 {
+  width: 1000px;
+  min-height: 800px;
+  margin: auto;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 5px rgb(0, 64, 0);
+}
+
+.indexMain {
+  background-image: url(../img/aaa.png);
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.indexSecundarias {
+  background-color: #000;
+}
+
+
+.indexHeader {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  border-bottom: 0.5px solid rgb(0, 64, 0);
+}
+
+.logo {
+  width: 7%;
+  height: 70%;
+  /* MAXI CH. Centrar verticalmente el logo */
+  display: flex;
+  align-items: center;
+}
+
+.imgLogo {
+  height: 80%;
+  margin-left: 15px;
+}
+
+.navbar {
+  width: 53.5%;
+  height: 50%;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: end;
+  gap: 28px;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+
+ul {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  font-family: "GT-America-Compressed-Medium";
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 64, 0);
+  transition: 0.3s;
+}
+
+a.trailer {
+	color: #fff;
+}
+
+.trailer {
+  background-color: rgb(0, 64, 0);
+  padding: 5px 15px 5px 15px;
+  border-radius: 4px;
+}
+
+.trailer:hover {
+  background-color: rgb(0, 80, 0);
+}
+
+/*---------------------SECTION-----------------------------*/
+
+.indexSection, .sectionPersonajes, .sectionFormulario, .sectionTomas, .navegacion2, .sectionconcurso {
+  min-height: 800px;
+}
+
+iframe {
+  width: 100%;
+  height:100%;
+}
+
+.indexSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/*---------------------FOOTER-----------------------------*/
+
+.indexFooter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+.logoDisney {
+	width: 12%;
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+
+a.copyright {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b3b3b;
+  font-size: 10px;
+}
+
+a.copyright:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.logoPeliculas {
+	width: 12%;
+	display: flex;
+	align-items: center;
+
+	/* 
+    CAMBIO MAXI: El conjunto del logo "MARVEL - UCES" este con 15px de margen del lado derecho:
+
+    Agrego justify-end para justificar los items al final.
+    Agregas el margen a la derecha.
+  */
+	justify-content: end;
+	margin-right: 20px; /* MAXI CH. De 15px a 20px para que coincida mejor con el Ver trailer */
+}
+
+.imagenMarvel {
+	padding: 10%;
+}
+
+/*---------------------INDEXPERSONAJES-----------------------------*/
+
+.sectionPersonajes {
+  width: 100%;
+}
+
+/* cuando hagamos el mobile, el height de sectionPersonajes va en "Auto" y el containerPersonajes tiene flex-direction: column y tambien bajarle el width*/
+
+.tituloPersonajes {
+  font-family: "GT-America-Compressed-black";
+  height: 60px;
+  color: rgb(0, 64, 0);
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.tituloPersonajes::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+
+.containerPersonajes {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columnaPersonajes {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  justify-content: center;
+}
+
+.imagenPersonaje {
+  border-radius: 4px;
+  width: 170px;
+  margin: 0 auto 5px;
+}
+
+.pares, .impares {
+  border: 3px solid #3b3b3b;
+  border-radius: 4px;
+  filter: saturate(0%);
+}
+
+.pares::selection, .impares::selection {
+  background-color: rgb(0, 64, 0);
+}
+
+.pares:hover, .impares:hover {
+  border: 3px solid #004000;
+  filter: saturate(100%);
+  transition: .2s;
+}
+
+.nombreActor {
+  font-family: "GT-America-Regular";
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.nombrePersonaje {
+  font-family: "GT-America-Regular";
+  font-size: 14px;
+  color: #393939;
+}
+
+.nombrePersonaje::selection, .nombreActor::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+/*---------------------GALERIA DE IMAGENES-----------------------------*/
+
+.sectionTomas {
+  width: 97%;
+  height: 78%;
+  align-items: center;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  justify-content: center;
+}
+
+.contenedorColumnas {
+  width: 100%;
+  margin-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorImagenes {
+  width: 50%;
+  float: left;
+  height: 80%;
+}
+
+.contenedorImagenesDiseño {
+  width: 50%;
+  height: 80%;
+}
+
+.contenedorTexto {
+  width: 50%;
+  float: right;
+  height: 80%;
+}
+
+.imagen1 {
+  padding: 1.5%;
+  width: 50%;
+  float: left;
+  border-radius: 1rem;
+}
+
+.imagen2 {
+  padding: 1.5%;
+  width: 50%;
+  float: right;
+  border-radius: 1rem;
+}
+
+.tituloTomas {
+  padding-left: 0.5%;
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  height: 5%;
+}
+
+.sinopsis-titulo {
+  color: #fff;
+  margin-left: 60px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-top: -80px;
+}
+
+.sinopsis-titulo::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+.sinopsis-titulo::after {
+  content:"";
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin-top: 5px;
+  background-color: rgb(0, 64, 0);
+}
+
+.sinopsis2 {
+  width: 100%;
+  padding: 5%;
+  font-family: "GT-America-Regular";
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 130%;
+}
+
+.sinopsis2::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+
+
+
+/*---------------------FORMULARIO-----------------------------*/
+
+.sectionconcurso {
+  background-color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sectionFormulario {
+  width: 97%;
+  height: 78%;
+  align-items: center;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(0, 0, 0);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 0.5px solid rgb(0, 64, 0);
+  border-radius: 4px;
+}
+
+.titulos {
+  font-family: "GT-America-Compressed-Black";
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 22px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.personaje {
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.titulos::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+.tituloformulario {
+  font-family: "GT-America-Compressed-black";
+  color: rgb(0, 64, 0);
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloformulario::selection {
+  background-color: rgb(0, 64, 0);
+  color: #000;
+}
+
+.cajas {
+  font-family: "GT-America-Regular";
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #1a1a1a;
+  border: 1px solid #3b3b3b;
+  border-radius: 2px;
+  outline: none;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: #999;
+}
+
+.comentario {
+  font-family: "GT-America-Regular";
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1a1a1a;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.boton-enviar {
+  display: inline-block;
+  font-family: "GT-America-Compressed-black";
+  font-size: 15px;
+  letter-spacing: 1px;
+  width: 90%;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(0, 64, 0);
+}
+
+.boton-enviar:hover {
+  color: #fff;
+  background-color: rgb(0, 80, 0);
+  transition: 1s;
+  border: none;
+}
+
+/*---------------------RELEVAMIENTO-----------------------------*/
+
+
+
+.diseñoMicrositio {
+  width: 80%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.youtube{
+  margin-left: 10%;
+}
+
+.index-micrositio {
+  min-height: 800px;
+  background-color:  #000;
+}
+
+.indexSecundariasmicrositio {
+  min-height: 800px;
+}
+
+.video {
+  width: 96.5%;
+  height: 700px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+  .index-micrositio {
+    background-image: url(../img/index-micrositio-fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-index-micrositio {
+	font-family: "GT-America-Compressed-black";
+	letter-spacing: 1px;
+	color: rgb(0, 64, 0);
+	font-size: 50px;
+	margin-left: 125px;
+	padding-top: 180px;
+	line-height: 50px;
+}
+
+.titulo-index-micrositio::selection {
+	color: #000;
+	background-color: rgb(0, 64, 0);
+}
+.bajada-titulo {
+	color: white;
+	margin-left: 15px;
+	font-size: 16px;
+	margin-left: 125px;
+	margin-top: 30px;
+	font-family: "GT-America-Regular";
+	line-height: 25px;
+}
+
+.bajada-titulo::selection {
+	color: #000;
+	background-color: rgb(0, 64, 0);
+}
+
+.relevamientopdf {
+  width: 96.5%;
+  height: 700px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/*---------------------MICROSITIO - DISEÑO WEB-----------------------------*/
+
+#article1{
+	width: 575px;
+	height: 650px;
+	margin-top: 10px;
+	margin-left: 15px;
+	background-color: transparent;
+	float: left;
+}
+
+#article2{
+	width: 575px;
+	height: 650px;
+	margin-top: 10px;
+	margin-right: 15px;
+	background-image: url(../img/croma.svg);
+	float: right;
+}
+
+.titulotipoprincipal{
+	font-size: 24px;
+	margin-top: 10px;
+	margin-left: 15px;
+	color: #fff;
+}
+
+.bajadatipoprincipal{
+	font-family: "GT-America-Regular";
+	font-size: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.tipoprincipal{
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.gtamericacompblack{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.gtamericacompregular{
+	font-family: "GT-America-Compressed-regular";
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.gtamericaregular{
+	font-family: "GT-America-regular";
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.contenedor-wireframes {
+  width: 50%;
+  height: 80%;
+  margin-left: 15px;
+}
+
+.wireframe {
+    padding: 1.5%;
+    width: 50%;
+    border-radius: 1rem;
+}
+
+
+/*---------------------MEDIA-----------------------------*/
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+  .indexHeader{
+    height: auto;
+    min-height: 90px;
+    padding-right: 0%;
+  }
+
+  .indexMain, .indexSecundarias, .indexSecundariasMicrositio, .indexSecundariasMicrositio2 {
+    width: 100%;
+  }
+
+  .indexSection {
+    background-image: url(../img/index576.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1100px;
+  }
+
+  .imgLogo {
+    margin-left: 15px;
+    height: 100%;
+  }
+
+  .labelHambur{
+    display: block;
+    color: #004000;
+    text-align: end;
+    font-size: 30px;
+  }
+
+  .menuPrueba {
+    display: none;
+    text-align: end;
+  }
+
+  .menuPruebaElemento {
+    margin: 2%;
+    margin-right: 0%;
+    padding-bottom: 10px;
+  }
+
+  .sectionPersonajes {
+    height: auto;
+  }
+
+  .logo {
+    height: 43px;
+    width: 43px;
+  }
+
+  .navbar {
+    width: 70%;
+    margin-right: 3%;
+  }
+
+  ul > li > a {
+    font-size: 22px;
+  }
+  
+
+
+
+
+
+
+  /*----------------TOMAS.HTML-----------------------*/
+
+  .tituloTomas {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+  }
+
+  .contenedorColumnas {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .imagen1, .imagen2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contenedorImagenes {
+    width: 85%;
+  }
+
+  .contenedorImagenesDiseño {
+    width: 100%;
+  }
+
+  .contenedorTexto {
+    width: 100%;
+  }
+
+  .sinopsis-titulo {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .sinopsis2 {
+    width: 95%;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .sinopsis3 {
+    font-size: 16px;
+  }
+  /*----------------PERSONAJES.HTML-----------------------*/
+
+
+  .containerPersonajes {
+    height: auto;
+    /* MAXI CH. Personajes en 1 columna, arreglar detalles */
+    flex-direction: column;
+  }
+
+  .columnaPersonajes {
+    flex: 0 1 50%;
+    padding: 10%;
+  }
+
+  .nombreActor {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  .tituloPersonajes {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    
+    width: 80%;
+  }
+
+  .imagenPersonaje,
+  .nombrePersonaje {
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+    padding: 0%;
+  }
+
+  .nombrePersonaje {
+    padding: 5px;
+  }
+
+  /*----------------CUESTIONARIO.HTML-----------------------*/
+
+  .sectionFormulario > .tituloPersonajes {
+    font-size: 25px;
+  }
+
+  .titulos {
+    font-size: 15px;
+  }
+
+  .personaje{
+    font-size: 15px;
+
+  }
+  .form{
+    width: 90%;
+    height: 630px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+
+  .boton {
+    display: block;
+  }
+
+.tituloformulario {
+  font-size: 33px;
+  text-align: center;
+}
+
+  .boton1 {
+    width: 100%;  
+    height: 40px;
+  }
+
+  .cajas{
+    height: 50px;
+    width: 90%;
+  }
+  /*----------------RELEVAMIENTO-----------------------*/
+
+  .diseñoMicrositio{
+    width: 90%;
+  }
+  
+  /*----------------FOOTER-----------------------*/
+
+
+  a.copyright {
+    width: 50%;
+    font-size: 12px;
+    color: #3b3b3b;
+  }
+
+  .logoDisney {
+    width: 25%;
+  }
+  
+  .logoPeliculas {
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .indexMain, .indexSecundarias, .indexSecundariasMicrositio, .indexSecundariasMicrositio2 {
+    width: 100%;
+  }
+  
+  .indexHeader {
+    height: 90px;
+  }
+
+  .navbar {
+    width: 60%;
+  }
+
+  .menu {
+    font-size: 25px;
+  }
+
+  input:checked  ~ .menuPrueba{
+    display: flex;
+  }
+
+
+
+  .indexSection {
+    background-image: url(../img/background768.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+  }
+
+  .sectionconcurso {
+    min-height: 1000px;
+  }
+
+  .sectionPersonajes {
+    min-height: 1000px;
+  }
+
+  .containerPersonajes {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .pares, .impares {
+    width: 100%;
+  }
+
+  .nombreActor {
+    margin-left: 10px;
+  }
+
+  .tituloPersonajes {
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  .columnaPersonajes {
+      flex: 0 1 25%;
+      padding: 2%;
+  }
+
+  .sectionFormulario > h2 {
+    font-size: 30px;
+    padding: 2%;
+  }
+
+  .sinopsis-titulo {
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 0px;
+
+  }
+
+  .sinopsis2 {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .tituloformulario {
+    font-size: 40px;
+  }
+
+  .form > label {
+    font-size: 24px;
+    margin-bottom: 2% auto 2%;
+  }
+
+
+  .form{
+    width: 75%;
+    height: 70%;
+  }
+
+  .boton1{
+    width: 40%;
+  }
+
+  /*----------------FOOTER-----------------------*/
+
+  .logoDisney {
+    width: 18%;
+  }
+
+  .logoPeliculas { 
+    width: 18%;
+  }
+
+  .creadoraPagina {
+    font-size: 18px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  /* MAXI CH. por lo que se ve si se aplican las cosas, borra las outline desp pero fijate */
+
+  .logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  ul.menu > li > a { /* MAXI CH. especifica clase menu para q reconozca */
+    font-size: 25px;
+
+  }
+
+  .trailer {
+    margin-right: 5px;
+  }
+
+  input:checked  ~ .menuPrueba{
+    display: flex;
+  }
+
+  .sinopsis2 {
+    width: 90%;
+  }
+
+  .sinopsis-titulo {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .columnaPersonajes {
+      flex: 0 1 20%;
+      padding: 1%;
+
+  }
+
+  .imagenPersonaje {
+    width: 160px;
+  }
+
+  .form {
+    width: 45%;
+  }
+
+  .logoDisney{
+    width: 15%;
+
+  }
+
+  .logoPeliculas{
+    width: 15%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  input:checked  ~ .menuPrueba{
+    display: flex;
+  }
+
+  .sectionFormulario > .tituloPersonajes {
+      font-size: 35px;
+    }
+  
+    .imagenPersonaje {
+      width: 160px;
+    }
+
+    .titulos {
+      font-size: 15px;
+    }
+
+    .menu {
+      font-size: 25px;
+    }
+
+    .sinopsis-titulo {
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+
+    .sinopsis2 {
+      width: 90%;
+      margin: auto;
+    }
+
+
+  .columnaPersonajes {
+      flex: 0 1 20%;
+  }  
+
+  #article1 {
+    width: 475px;
+    margin-left: 45px;
+  }
+
+  #article2 {
+    width: 465px;
+    background-repeat: no-repeat;
+  }
+
+  .bajadatipoprincipal, .gtamericacompblack, .gtamericaregular {
+    font-size: 16px;
+
+}
+
+}
